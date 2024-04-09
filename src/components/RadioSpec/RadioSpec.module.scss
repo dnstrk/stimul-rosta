@@ -1,0 +1,40 @@
+.radioGroup {
+    input[type="radio"] {
+        display: none;
+    }
+
+    label {
+        white-space: nowrap;
+        font-size: 15px;
+        font-weight: 500;
+        color: var(--black);
+        display: inline-block;
+        cursor: pointer;
+        padding: 5px 15px;
+        line-height: 34px;
+        border: 1px solid var(--violet);
+        border-radius: 50px;
+        user-select: none;
+        transition: 0.2s;
+    }
+
+    input[type="radio"]:checked+label {
+        color: var(--white);
+        background-color: var(--violet);
+        border-color: var(--white);
+    }
+
+    &:hover {
+        input[type="radio"]+label {
+            color: var(--white);
+            background-color: var(--violet);
+        border-color: var(--white);
+        }
+    }
+
+    .selected {
+        color: var(--white);
+        background-color: #e28424;
+        border-color: #e28424;
+    }
+}
