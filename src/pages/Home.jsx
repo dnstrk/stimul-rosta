@@ -65,7 +65,7 @@ export default function Home() {
     }
 
     //< паралакс для кружков
-    
+
     //>
 
     //только числовой ввод в countBanner и текстовый в townBanner
@@ -190,10 +190,6 @@ export default function Home() {
             }
         }
     }, [regionMedia]);
-
-    // useEffect(() => {
-    //     setTownBanner(currentTown);
-    // }, [currentTown]);
 
     return (
         <>
@@ -383,7 +379,7 @@ export default function Home() {
                             <CardSpec
                                 home
                                 img={"/img/Кассир.png"}
-                                alt={'Кассир'}
+                                alt={"Кассир"}
                                 spec={"Кассир"}
                                 subTitle={"< 1014 кассиров"}
                                 text={
@@ -435,7 +431,7 @@ export default function Home() {
                                     to="/specialties"
                                     className="specialists__cardMore__btn"
                                 >
-                                    Посмотреть все специальности
+                                Больше специалистов
                                 </Link>
                             </div>
                         </div>
@@ -445,57 +441,6 @@ export default function Home() {
             <section className="section__clientInfo">
                 <div className="container">
                     <div className="clientInfo-wrap">
-                        <div className="clientInfo__img">
-                            <img
-                                className="clientInfo__imgAbs c1"
-                                src="/img/clientInfoImgMain.png"
-                                alt=""
-                            />
-                            <img
-                                className="clientInfo__imgAbs c2"
-                                src="/img/clientInfoGreenEllipse.svg"
-                                alt=""
-                            />
-                            <img
-                                className="clientInfo__imgAbs c3"
-                                src="/img/clientInfoGreenEllipse_s.svg"
-                                alt=""
-                            />
-                            <img
-                                className="clientInfo__imgAbs c4"
-                                src="/img/clientInfoHorLines.svg"
-                                alt=""
-                            />
-                            <img
-                                className="clientInfo__imgAbs c5"
-                                src="/img/clientInfoOrangeEllipse_s.svg"
-                                alt=""
-                            />
-                            <img
-                                className="clientInfo__imgAbs c6"
-                                src="/img/bannerHorDots.svg"
-                                alt=""
-                            />
-                            <img
-                                className="clientInfo__imgAbs c7"
-                                src="/img/bannerVertDots.svg"
-                                alt=""
-                            />
-                            <img
-                                className="clientInfo__imgAbs c8"
-                                src="/img/clientInfoForm.svg"
-                                alt=""
-                            />
-                            <b className="clientInfo__imgAbs c8_text scrolled">
-                                Мы отбираем для
-                                <br /> вас лучших!
-                            </b>
-                            <img
-                                className="clientInfo__imgAbs c9"
-                                src="/img/clientInfoFormDop.svg"
-                                alt=""
-                            />
-                        </div>
                         <div className="clientInfo__content">
                             <h5 className="clientInfo__contentTitle">
                                 Наши клиенты получают лучшие кадры на рынке!
@@ -630,89 +575,10 @@ export default function Home() {
                                     </p>
                                 </li>
                             </ul>
-                            <button
-                                onClick={(e) => setRequestOverlay(true)}
-                                className="stats__rightBtn"
-                            >
-                                Заказать персонал
-                            </button>
+                            <Link to={"/specialties"} className="stats__rightBtn">
+                                Показать всех специалистов
+                            </Link>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section className="section__partners">
-                <div className="container">
-                    <div className="partners-wrap">
-                        <h6 className="partners__title">
-                            У нас действительно крутые партнеры
-                        </h6>
-                        <div className="partners__cards">
-                            <div className="partners__card">
-                                <img src="/img/partner1-min.png" alt="Мираторг" />
-                            </div>
-                            <div className="partners__card">
-                                <img src="/img/partner2-min.png" alt="Твой дом" />
-                            </div>
-                            <div className="partners__card">
-                                <img src="/img/partner3-min.png" alt="Metro" />
-                            </div>
-                            <div className="partners__card">
-                                <img src="/img/partner4-min.png" alt="Ашан" />
-                            </div>
-                            <div className="partners__card">
-                                <img src="/img/partner5-min.png" alt="Globus" />
-                            </div>
-                            <div className="partners__card">
-                                <img src="/img/partner6-min.png" alt="Каждый день" />
-                            </div>
-                            <div className="partners__card">
-                                <img src="/img/partner7-min.png" alt="Бабаевский" />
-                            </div>
-                            <div className="partners__card">
-                                <img src="/img/partner8-min.png" alt="OBI" />
-                            </div>
-                            <div className="partners__card">
-                                <img src="/img/partner9-min.png" alt="Седьмой континент" />
-                            </div>
-                            <div className="partners__card">
-                                <img src="/img/partner10-min.png" alt="ECCO" />
-                            </div>
-                            <div className="partners__card">
-                                <img src="/img/partner11-min.png" alt="castorama" />
-                            </div>
-                            <div className="partners__card">
-                                <img src="/img/partner12-min.png" alt="Дикси" />
-                            </div>
-                            <div className="partners__card">
-                                <img src="/img/partner13-min.png" alt="Красный Октябрь" />
-                            </div>
-                            <div className="partners__card">
-                                <img src="/img/partner14-min.png" alt="MGL" />
-                            </div>
-                            <div className="partners__card">
-                                <img src="/img/partner15-min.png" alt="Карусель" />
-                            </div>
-                            <div className="partners__card">
-                                <img src="/img/partner16-min.png" alt="Русский шоколад" />
-                            </div>
-                            <div className="partners__card">
-                                <img src="/img/partner17-min.png" alt="Selgros" />
-                            </div>
-                            <div className="partners__card">
-                                <img src="/img/partner18-min.png" alt="Faberlic" />
-                            </div>
-                            <div className="partners__card">
-                                <img src="/img/partner19-min.png" alt="" />
-                            </div>
-                            <div className="partners__card">
-                                <img src="/img/partner20-min.png" alt="Перекресток" />
-                            </div>
-                        </div>
-                        <p className="partners__text">
-                            И еще{" "}
-                            <span className="partners__text_marked">276</span>{" "}
-                            лучших компаний страны. Присоединяйтесь!
-                        </p>
                     </div>
                 </div>
             </section>
@@ -837,6 +703,119 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+            <section className="section__partners">
+                <div className="container">
+                    <div className="partners-wrap">
+                        <h6 className="partners__title">
+                            Мы сотрудничаем с выдающимися
+                        </h6>
+                        <div className="partners__cards">
+                            <div className="partners__card">
+                                <img
+                                    src="/img/partner1-min.png"
+                                    alt="Мираторг"
+                                />
+                            </div>
+                            <div className="partners__card">
+                                <img
+                                    src="/img/partner2-min.png"
+                                    alt="Твой дом"
+                                />
+                            </div>
+                            <div className="partners__card">
+                                <img src="/img/partner3-min.png" alt="Metro" />
+                            </div>
+                            <div className="partners__card">
+                                <img src="/img/partner4-min.png" alt="Ашан" />
+                            </div>
+                            <div className="partners__card">
+                                <img src="/img/partner5-min.png" alt="Globus" />
+                            </div>
+                            <div className="partners__card">
+                                <img
+                                    src="/img/partner6-min.png"
+                                    alt="Каждый день"
+                                />
+                            </div>
+                            <div className="partners__card">
+                                <img
+                                    src="/img/partner7-min.png"
+                                    alt="Бабаевский"
+                                />
+                            </div>
+                            <div className="partners__card">
+                                <img src="/img/partner8-min.png" alt="OBI" />
+                            </div>
+                            <div className="partners__card">
+                                <img
+                                    src="/img/partner9-min.png"
+                                    alt="Седьмой континент"
+                                />
+                            </div>
+                            <div className="partners__card">
+                                <img src="/img/partner10-min.png" alt="ECCO" />
+                            </div>
+                            <div className="partners__card">
+                                <img
+                                    src="/img/partner11-min.png"
+                                    alt="castorama"
+                                />
+                            </div>
+                            <div className="partners__card">
+                                <img src="/img/partner12-min.png" alt="Дикси" />
+                            </div>
+                            <div className="partners__card">
+                                <img
+                                    src="/img/partner13-min.png"
+                                    alt="Красный Октябрь"
+                                />
+                            </div>
+                            <div className="partners__card">
+                                <img src="/img/partner14-min.png" alt="MGL" />
+                            </div>
+                            <div className="partners__card">
+                                <img
+                                    src="/img/partner15-min.png"
+                                    alt="Карусель"
+                                />
+                            </div>
+                            <div className="partners__card">
+                                <img
+                                    src="/img/partner16-min.png"
+                                    alt="Русский шоколад"
+                                />
+                            </div>
+                            <div className="partners__card">
+                                <img
+                                    src="/img/partner17-min.png"
+                                    alt="Selgros"
+                                />
+                            </div>
+                            <div className="partners__card">
+                                <img
+                                    src="/img/partner18-min.png"
+                                    alt="Faberlic"
+                                />
+                            </div>
+                            <div className="partners__card">
+                                <img src="/img/partner19-min.png" alt="" />
+                            </div>
+                            <div className="partners__card">
+                                <img
+                                    src="/img/partner20-min.png"
+                                    alt="Перекресток"
+                                />
+                            </div>
+                        </div>
+                        <p className="partners__text">
+                            И еще{" "}
+                            <span className="partners__text_marked">276</span>{" "}
+                            лучших компаний страны. Присоединяйтесь!
+                        </p>
+                    </div>
+                </div>
+            </section>
+
             <section className="section__map">
                 <div className="container">
                     <div className="mapWrap">

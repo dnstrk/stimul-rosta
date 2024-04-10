@@ -40,18 +40,18 @@
                         height: 1px;
                         left: 0;
                         bottom: -2px;
-                        background: var(--green);
+                        background: var(--vaiolit);
 
                         transition: 0.3s;
                     }
 
                     &:hover {
-                        color: var(--green);
+                        color: var(--vaiolit);
 
                         svg {
                             path {
                                 transition: 0.3s;
-                                fill: var(--green);
+                                fill: var(--vaiolit);
                             }
                         }
 
@@ -66,5 +66,5 @@
 }
 
 .visible {
-    top: 44px;
+    top: 56px;
 }

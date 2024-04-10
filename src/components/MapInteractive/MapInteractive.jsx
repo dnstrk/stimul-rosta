@@ -2,7 +2,13 @@ import React, { useEffect, useState } from "react";
 import "./MapInteractive.scss";
 import officeData from "../../offises.json";
 
-const MapInteractive = ({ setRegion, setOfficesAddr, path, setPath }) => {
+const MapInteractive = ({
+    setRegion,
+    setOfficesAddr,
+    path,
+    setPath,
+    officesAddr,
+}) => {
     //весь этот блок предназначен для приведения json к адекватному виду
     const officesData = officeData["Города"]["Город"];
     const officesPropVal = officesData.map((off) => off.ЗначенияСвойства);
@@ -58,13 +64,19 @@ const MapInteractive = ({ setRegion, setOfficesAddr, path, setPath }) => {
 
         //выбор элементов содержащих data-title
         const hover = (region) => {
-            region.onmousemove = (e) => {
-                if (region.classList.value.includes("rf-empty")) {
+            if (officesAddr.length > 0) {
+                region.onmousemove = (e) => {
                     e.preventDefault();
-                } else {
-                    setRegion(region.dataset.title); //динамическое изменение региона
-                }
-            };
+                };
+            } else {
+                region.onmousemove = (e) => {
+                    if (region.classList.value.includes("rf-empty")) {
+                        e.preventDefault();
+                    } else {
+                        setRegion(region.dataset.title); //динамическое изменение региона
+                    }
+                };
+            }
 
             region.onclick = (e) => {
                 if (region.classList.value.includes("rf-empty")) {
