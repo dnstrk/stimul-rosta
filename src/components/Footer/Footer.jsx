@@ -6,25 +6,25 @@ const Footer = () => {
         <footer className={cl.footer}>
             <div className={cl.container}>
                 <div className={cl.footerWrap}>
-                    <h5 className={cl.footer__title}>ООО «Винстафф»</h5>
+                    <h5 className={cl.footer__title}>ООО «Стимул Роста»</h5>
                     <div className={cl.footer__info}>
                         <div className={cl.footer__infoContacts}>
                             <div className={cl.footer__infoContacts_num}>
                                 <span>Телефон:</span>
                                 <a
                                     className={cl.footer__infoContacts_link}
-                                    href="tel:+7(903) 192-83-98"
+                                    href="tel:+7(968) 628-78-04"
                                 >
-                                    <b>+7(903) 192-83-98</b>
+                                    <b>+7(968) 628-78-04</b>
                                 </a>
                             </div>
                             <div className={cl.footer__infoContacts_email}>
                                 <span>Email:</span>
                                 <a
                                     className={cl.footer__infoContacts_link}
-                                    href="mailto:info@win-staff.ru"
+                                    href="mailto:info@stimulrosta.ru"
                                 >
-                                    <b>info@win-staff.ru</b>
+                                    <b>info@stimulrosta.ru</b>
                                 </a>
                             </div>
                         </div>
@@ -33,14 +33,12 @@ const Footer = () => {
                                 Адрес:
                             </span>
                             <p className={cl.footer__infoAddr_place}>
-                                117393, г. Москва,<br /> муниципальный округ
-                                Обручевский вн. тер. г., Профсоюзная ул., д. 66,
-                                стр. 1, офис 301
+                            109240, г. Москва,<br /> вн.тер.г. муниципальный округ Таганский, ул. Верхняя Радищевская, д. 6, стр. 1
                             </p>
                         </div>
                     </div>
                     <p className={cl.footer__copyright}>
-                        Copyright @ 1998-2024 | Win-Staff – Win-staff.ru Все
+                        Copyright © 2024 | Стимул Роста - stimulrosta.ru Все
                         права защищены
                     </p>
                 </div>

@@ -59,7 +59,7 @@ const Header = () => {
                                             fill="#272C3E"
                                         />
                                     </svg>
-                                    <b>+7 903 192-83-98</b>
+                                    <b>+7 968 628-78-04</b>
                                 </a>
                             </li>
                         </ul>
@@ -79,7 +79,7 @@ const Header = () => {
                         <button className={cl.mediaTownCall}>
                             <a
                                 className={cl.mediaTownCall_Link}
-                                href="tel:79031928398"
+                                href="tel:+79686287804"
                             >
                                 <svg
                                     width="25"
@@ -107,6 +107,12 @@ const Header = () => {
                         className={cl.header__orderBtn}
                     >
                         Заявка на персонал
+                    </button>
+                    <button
+                        onClick={(e) => setMessageOverlay(true)}
+                        className={cl.header__messageBtn}
+                    >
+                        Написать нам
                     </button>
                     <div className={cl.mediaHeader__order}>
                         <button

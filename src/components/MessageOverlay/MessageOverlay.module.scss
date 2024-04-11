@@ -148,12 +148,12 @@
                 font-weight: 700;
                 text-align: center;
                 border-radius: 50px;
-                background: var(--orange, #fba457);
+                background: var(--violet);
 
                 transition: 0.1s;
 
                 &:hover {
-                    background: #f19920;
+                    background: var(--vaiolit);
                 }
 
                 &:active {
@@ -349,12 +349,10 @@
                     font-weight: 700;
                     text-align: center;
                     border-radius: 50px;
-                    background: var(--orange, #fba457);
 
                     transition: 0.1s;
 
                     &:hover {
-                        background: #f19920;
                     }
 
                     &:active {
@@ -566,12 +564,10 @@
                 font-weight: 700;
                 text-align: center;
                 border-radius: 50px;
-                background: var(--orange, #fba457);
 
                 transition: 0.1s;
 
                 &:hover {
-                    background: #f19920;
                 }
 
                 &:active {

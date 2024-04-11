@@ -157,6 +157,27 @@
                 transform: scale(99%);
             }
         }
+        .header__messageBtn {
+            cursor: pointer;
+            text-wrap: nowrap;
+            user-select: none;
+            color: var(--white);
+            padding: 10px 30px;
+            border-radius: 50px;
+            background: var(--vaiolit);
+            font-size: 16px;
+            font-weight: 600;
+
+            transition: 0.15s;
+
+            &:hover {
+                background-color: var(--violet);
+            }
+
+            &:active {
+                transform: scale(99%);
+            }
+        }
 
         .mediaHeader__order {
             display: none;
@@ -319,6 +340,9 @@
             .header__orderBtn {
                 display: none;
             }
+            .header__messageBtn {
+                display: none;
+            }
 
             .mediaHeader__order {
                 display: flex;
@@ -341,14 +365,7 @@
         .header__wrap {
             padding: 10px 5px;
             .header__logo {
-                .header__logo1 {
-                    width: 20px;
-                    height: 20px;
-                }
-                .header__logo2 {
-                    width: 100px;
-                    height: 20px;
-                }
+                font-size: 20px;
             }
 
             .header__nav {
@@ -397,14 +414,7 @@
         .header__wrap {
             padding: 16px 5px;
             .header__logo {
-                .header__logo1 {
-                    width: 16px;
-                    height: 16px;
-                }
-                .header__logo2 {
-                    width: 90px;
-                    height: 16px;
-                }
+                font-size: 16px;
             }
 
             .header__nav {
@@ -429,7 +439,7 @@
                     width: 20px;
                     height: 20px;
                     .mediaTownCall_Link {
-                        .mediaTownCall_LinkImg {
+                        svg {
                             width: 20px;
                             height: 20px;
                         }
@@ -479,14 +489,6 @@
         .header__wrap {
             padding: 10px 5px;
             .header__logo {
-                .header__logo1 {
-                    width: 14px;
-                    height: 14px;
-                }
-                .header__logo2 {
-                    width: 80px;
-                    height: 14px;
-                }
             }
 
             .header__nav {
@@ -494,6 +496,7 @@
             }
 
             .mediaHeader__town {
+                margin-right: 10px;
                 .header__town {
                     max-width: 70px;
                     padding: 2px 6px;
