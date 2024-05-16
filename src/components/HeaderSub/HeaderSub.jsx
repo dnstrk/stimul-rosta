@@ -10,11 +10,7 @@ export default function HeaderSub() {
         <div className={`${cl.headerSub} ${headerSub && cl.visible}`}>
             <nav className={cl.header__nav}>
                 <ul className={cl.header__navList}>
-                    <li className={cl.header__navItem}>
-                        <Link className={cl.header__navLink} to={"/about"}>
-                            О компании
-                        </Link>
-                    </li>
+                    
                     <li className={cl.header__navItem}>
                         <Link
                             className={cl.header__navLink}

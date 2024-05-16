@@ -136,12 +136,13 @@
                     transition: 0.15s;
 
                     &:hover {
-                        color: var(--green);
+                        color: var(--vaiolit);
                     }
                 }
             }
 
             .writeDrawer__foot__send {
+                cursor: pointer;
                 width: fit-content;
                 padding: 15px 50px;
                 color: var(--white);

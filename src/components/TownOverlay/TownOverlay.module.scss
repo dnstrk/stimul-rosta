@@ -127,18 +127,18 @@
                 font-weight: 700;
 
                 border-radius: 50px;
-                background: var(--orange, #FBA457);
+                background: var(--violet);
 
                 transition: .1s;
 
                 &:hover {
-                    background: #F19920;
+                    background: var(--vaiolit);
                     transform: scale(101%);
                 }
 
                 &:active {
                     transform: scale(99%);
-                    background: #E28424;
+                    background: var(--vaiolit);
                 }
             }
 

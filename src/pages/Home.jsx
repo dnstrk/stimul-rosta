@@ -19,6 +19,8 @@ export default function Home() {
         setPhoneBanner,
         mailBanner,
         setMailBanner,
+        nameBanner,
+        setNameBanner,
         townBanner,
         setTownBanner,
         countBanner,
@@ -37,6 +39,8 @@ export default function Home() {
         emailValidationMarker,
         townValidation,
         townValidationMarker,
+        nameValidation,
+        nameValidationMarker,
 
         sendRequestForm,
     } = useContext(UserContext);
@@ -64,9 +68,6 @@ export default function Home() {
         path.classList.remove("rf-clickMarked");
     }
 
-    //< паралакс для кружков
-
-    //>
 
     //только числовой ввод в countBanner и текстовый в townBanner
     useEffect(() => {
@@ -250,6 +251,26 @@ export default function Home() {
                                         placeholder="Ваш e-mail"
                                     />
                                 </div>
+                                <input
+                                        className="banner__actionInp__name"
+                                        name="inpNameB"
+                                        id="inpNameB"
+                                        type="text"
+                                        value={nameBanner}
+                                        onBlur={() => {
+                                            nameValidation(nameBanner);
+                                        
+                                            nameBanner.length > 0 &&
+                                                nameValidationMarker(
+                                                    "inpNameB",
+                                                    nameBanner
+                                                );
+                                        }}
+                                        onChange={(e) =>
+                                            setNameBanner(e.target.value)
+                                        }
+                                        placeholder="Ваше имя"
+                                    />
                                 <p className="banner__specText">
                                     Выберите специалиста
                                 </p>
@@ -344,22 +365,24 @@ export default function Home() {
                                         placeholder="Количество"
                                     />
                                     <button
-                                        // onClick={() =>
-                                        //     sendRequestForm(
-                                        //         "send.php",
-                                        //         phoneBanner,
-                                        //         mailBanner,
-                                        //         selectedSpec,
-                                        //         townBanner,
-                                        //         countBanner,
-                                        //         "B",
-                                        //         setPhoneBanner,
-                                        //         setMailBanner,
-                                        //         setSelectedSpec,
-                                        //         setTownBanner,
-                                        //         setCountBanner
-                                        //     )
-                                        // }
+                                        onClick={() =>
+                                            sendRequestForm(
+                                                "send.php",
+                                                phoneBanner,
+                                                mailBanner,
+                                                nameBanner,
+                                                selectedSpec,
+                                                townBanner,
+                                                countBanner,
+                                                "B",
+                                                setPhoneBanner,
+                                                setMailBanner,
+                                                setNameBanner,
+                                                setSelectedSpec,
+                                                setTownBanner,
+                                                setCountBanner
+                                            )
+                                        }
                                         type="button"
                                         className="banner__formBottom__btnSend"
                                     >

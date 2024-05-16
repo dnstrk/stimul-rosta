@@ -20,7 +20,6 @@ const Header = () => {
 
         window.addEventListener("scroll", () => {
             if (window.scrollY > 0) {
-                console.log(header.classList);
                 header.classList.add(`${cl.scroll}`);
             } else if (window.scrollY == 0) {
                 header.classList.remove(`${cl.scroll}`);
